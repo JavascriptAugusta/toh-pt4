@@ -77,7 +77,7 @@ export class AppComponent implements OnInit {
 
   getHeroes(): void {  
     //when the Promise object returns, we are passing the returned value to a function 
-    //with one argument called heroes
+    //with the argument heroes
     //this function assigns the returned data to the current object's heroes property
     this.heroService.getHeroes().then(heroes => this.heroes = heroes);
     //this.heroService.getHeroesSlowly().then(heroes => this.heroes = heroes);
